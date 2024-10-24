@@ -44,12 +44,12 @@ Below is a description of each JSON key used in the settings of the application:
 
 | Category             | Key           | Type       | Description                                                                                           | Example Value            |
 |----------------------|---------------|------------|-------------------------------------------------------------------------------------------------------|--------------------------|
-| **Name**   | `song_name`  | `string`    | Used to determine the function name when using /function notegen:SONG_NAME_HERE. If the string is empty, the function name will be the song name in LOWERCASE. DO NOT INCLUDE SPACES OR SPECIAL CHARACTERS.           | `"MySongName"` |
+| **Name**   | `song_name`  | `string`    | Used to determine the function name when using `/function notegen:SONG_NAME_HERE`. If the string is empty, the function name will be the song name in LOWERCASE. DO NOT INCLUDE SPACES OR SPECIAL CHARACTERS.           | `"MySongName"` |
 | **File**    | `midi_file_name` | `string` | The name of the file. Make sure the file contains spaces or special characters, please set the song_name with its proper settings. DO NOT INCLUDE THE FILE EXTENTION IN THE FILE NAME.   | `"my-file-name"`                 |
 |                      | `midi_file_directory`   | `string` | The directory for the midi file. You can use the default './midi' directory, or specify your own desired directory. Be sure to to include 2 backslashes for each sub-directory as shown in the example. | `C:\\your-folder` |
 |                      | `midi_file_type` | `string` | The file extension. Please leave as .mid since this setting is reserved for possible future use. Make sure that the file you are using is a .mid file. | `.mid` |
 | **Function Namespace** | `namespace`   | `string` | This is used for you function namespace when using the /function command. It is recommended to leave the namespace as notegen | `"notegen"` |
-| **Minecraft** | `minecraft_world_saves_directory`   | `string` | The directory of your minecaft world saves | `"C:\\Users\\theMegaEXP\\AppData\\Roaming\\.minecraft\\saves"` |
+| **Minecraft** | `minecraft_world_saves_directory`   | `string` | The directory of your minecaft world saves | `"C:\\Users\\YOUR_USER_HERE\\AppData\\Roaming\\.minecraft\\saves"` |
 | | `minecraft_version` | `string` | The Minecraft version. Must be between `1.13` - `1.21.3`. Please include sub versions such as `1.20.1`. Non sub versions should not include the extra `'.'` | `"1.21.3"` |
 | | `minecraft_world_name` | `string` | The name of the Minecraft world. | `"WorldName"` |
 | **Generation** | `gap`   | `integer` | The amount of blocks between each note. A value of 0 will have no gap | `0` |
