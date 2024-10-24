@@ -1,0 +1,22 @@
+{
+    "song_name": "sample",
+
+    "midi_file_name": "sample",
+    "midi_file_directory": "./midi/",
+    "midi_file_type": ".mid",
+
+    "namespace": "notegen",
+
+    "minecraft_world_saves_directory": "C:\\Users\\YOUR_USER_HERE\\AppData\\Roaming\\.minecraft\\saves",
+    "minecraft_version": "1.21.3",
+    "minecraft_world_name": "new-world", 
+
+    "gap": 0,
+    "padding": 0,
+    "air_height": 20,
+    "floor_block_1": "gray_concrete",
+    "floor_block_2": "lime_concrete",
+    "light_enabled": true,
+    "light_level": 12,
+    "light_spacing": 5
+}
