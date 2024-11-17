@@ -17,7 +17,7 @@ If you do not have any programming or software knowledge, this app may be diffic
 ## What to Include in the MIDI File
 
 Every instrument will by default be a harp sound using the Minecraft dirt block. 
-If you want to change the instrument, you will need to to change each instrument name in a DAW to a valid instrument name. 
+If you want to change the instrument, you will need to change each instrument name in a DAW to a valid instrument name. 
 You can look at the `instruments.js` file to see valid instrument names and their corresponding block.
 
 
@@ -25,7 +25,7 @@ You can look at the `instruments.js` file to see valid instrument names and thei
 
 You must have [Node.js](https://nodejs.org/) installed on your computer and installed to this repo once cloned.
 You will need to configure the `settings.json` file from this repo. Here is what you need to know about the settings configuration: [Settings Configuration](#settings-configuration).
-You then need to install the midi section of `tone.js` to this repo by running `npm install @tonejs/midi` in a terminal
+You then need to install the midi section of `tone.js` to this repo by running `npm install @tonejs/midi` in a terminal.
 You can add your midi files to the midi folder from this github repo. It should contain a `sample.mid` file. You can also specify a different directory for your midi files in the `settings.json` file.
 To run the app, you must run main.js using `Node.js` by typing in a terminal `node main.js` in the directory this app is located in.
 
@@ -48,12 +48,12 @@ Below is a description of each JSON key used in the settings of the application:
 | **File**    | `midi_file_name` | `string` | The name of the file. Make sure the file contains spaces or special characters, please set the song_name with its proper settings. DO NOT INCLUDE THE FILE EXTENTION IN THE FILE NAME.   | `"my-file-name"`                 |
 |                      | `midi_file_directory`   | `string` | The directory for the midi file. You can use the default './midi' directory, or specify your own desired directory. Be sure to to include 2 backslashes for each sub-directory as shown in the example. | `C:\\your-folder` |
 |                      | `midi_file_type` | `string` | The file extension. Please leave as .mid since this setting is reserved for possible future use. Make sure that the file you are using is a .mid file. | `.mid` |
-| **Function Namespace** | `namespace`   | `string` | This is used for you function namespace when using the /function command. It is recommended to leave the namespace as notegen | `"notegen"` |
-| **Minecraft** | `minecraft_world_saves_directory`   | `string` | The directory of your minecaft world saves | `"C:\\Users\\theMegaEXP\\AppData\\Roaming\\.minecraft\\saves"` |
+| **Function Namespace** | `namespace`   | `string` | This is used for your function namespace when using the /function command. It is recommended to leave the namespace as notegen | `"notegen"` |
+| **Minecraft** | `minecraft_world_saves_directory`   | `string` | The directory of your Minecraft world saves | `"C:\\Users\\theMegaEXP\\AppData\\Roaming\\.minecraft\\saves"` |
 | | `minecraft_version` | `string` | The Minecraft version. Must be between `1.13` - `1.21.3`. Please include sub versions such as `1.20.1`. Non sub versions should not include the extra `'.'` | `"1.21.3"` |
 | | `minecraft_world_name` | `string` | The name of the Minecraft world. | `"WorldName"` |
 | **Generation** | `gap`   | `integer` | The amount of blocks between each note. A value of 0 will have no gap | `0` |
-| | `padding` | `integer` | The amount of blocks between chord. A value of 0 will have no gap | `0` |
+| | `padding` | `integer` | The amount of blocks between a musical chord. A value of 0 will have no gap | `0` |
 | | `air_height` | `integer` | The amount of air that will generate above the sequence. Used to carve into terrain. | `20` |
 | | `floor_block_1` | `string` | The primary block of the floor. Be sure the block matches the minecraft block id name of the Minecraft version you are using. | `"light_blue_concrete"` |
 | | `floor_block_2` | `string` | The secondary block of the floor. | `"sea_lantern"` |
